@@ -116,30 +116,11 @@ img{
 
 
   /* Requirement 9 code here -- Do not remove this comment. */
-.about text{
+.text{
   align-self: end;
   max-height: 40vh;
   overflow: scroll;
 }
-
-.clients text{
-  align-self: end;
-  max-height: 40vh;
-  overflow: scroll;
-}
-
-.method text{
-  align-self: end;
-  max-height: 40vh;
-  overflow: scroll;
-}
-
-.contact text{
-  align-self: end;
-  max-height: 40vh;
-  overflow: scroll;
-}
-
 
 
   /*Add the media query here.  Make sure to */
@@ -148,9 +129,8 @@ img{
   nav{
     padding-top: 35px;
     /* Requirement 10 code here -- Do not remove this comment. */
-    text-align: end;
+    text-align: right;
     
-
   }
 
   nav li{
