@@ -6,52 +6,150 @@ a.skip{
   transition: left 1s ease-out;
   z-index: 1;
   /* Requirement 1 code here -- Do not remove this comment. */
-
-  
+  position:absolute;
+  left:-400px;
+  top:-200px;
 }
 
 
   /* Requirement 2 code here -- Do not remove this comment. */
-
-
+  nav li a:focus{
+    text-decoration: overline;
+    text-decoration-color: yellow;
+    text-decoration-thickness: 10px;
+  
+}
   /* Requirement 3 code here -- Do not remove this comment. */
-
+.container{
+  display:grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  row-gap:30px;
+}
 
   /* Requirement 4 code here -- Do not remove this comment. */
-
+.intro{
+  background-image: url("../images/header.jpg");
+  background-color: #858585;
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
 
   /* Requirement 5 code here -- Do not remove this comment. */
+#about{
+  grid-column-start: 2;
+}
+
+#clients{
+  grid-column-start: 2;
+}
+
+#method{
+  grid-column-start: 2;
+}
+
+#contact{
+  grid-column-start: 2;
+}
 
   /* Requirement 6 code here -- Do not remove this comment. */
-
+img{
+  width: 100%;
+}
 
   /* Requirement 7 code here -- Do not remove this comment. */
-  
+.about-image{
+  grid-column: 1 / 4;
+  max-height: 500px;
+}
+
+.clients-image{
+  grid-column: 1 / 4;
+  max-height: 500px;
+}
+
+.method-image{
+  grid-column: 1 / 4;
+  max-height: 500px;
+}
+
+.contact-image{
+  grid-column: 1 / 4;
+  max-height: 500px;
+}
 
   /* Requirement 8 code here -- Do not remove this comment. */
+#about{
+  grid-row-start:1;
+}
 
+.about-image{
+  grid-row-start:1;
+}
 
+#clients{
+  grid-row-start:2;
+}
 
+.clients-image{
+  grid-row-start:2;
+}
 
+#method{
+  grid-row-start:3;
+}
 
+.method-image{
+  grid-row-start:3;
+}
 
+#contact{
+  grid-row-start:4;
+}
 
-
+.contact-image{
+  grid-row-start:4;
+}
 
 
   /* Requirement 9 code here -- Do not remove this comment. */
+.about text{
+  justify-content: center;
+  max-height: 40vh;
+  overflow: scroll;
+}
 
+.clients text{
+  justify-content: center;
+  max-height: 40vh;
+  overflow: scroll;
+}
+
+.method text{
+  justify-content: center;
+  max-height: 40vh;
+  overflow: scroll;
+}
+
+.contact text{
+  justify-content: center;
+  max-height: 40vh;
+  overflow: scroll;
+}
 
 
 
   /*Add the media query here.  Make sure to */
 
-@media {
+@media screen and (min-width:800px){
   nav{
     padding-top: 35px;
     /* Requirement 10 code here -- Do not remove this comment. */
-
-    text-align:right
+    text-align: end;
+    
 
   }
 
@@ -62,20 +160,76 @@ a.skip{
 
   
   /* Requirement 11 code here -- Do not remove this comment. */
-
+.skip :focus{
+  position:absolute;
+  left:0px;
+  top:20px;
+}
 
 
   /* Requirement 12 code here -- Do not remove this comment. */
-  
+  .container{
+    display: grid;
+    grid-template-columns: 50px auto 500px auto 50px;
+    grid-template-rows: 300px 300px 300px 300px;
+  }
 
 
   /* Requirement 13 code here -- Do not remove this comment. */
- 
+  #about{
+    grid-column: 3 / span 2;
+ }
+  
+  #method{
+    grid-column: 3 / span 2;
+  }
+
+  .clients-image{
+    grid-column: 3 / span 2;
+  }
+
+  .contact-image{
+    grid-column: 3 / span 2;
+  }
 
   /* Requirement 14 code here -- Do not remove this comment. */
- 
+  #clients{
+    grid-column: 2 / span 2;
+  }
+
+  #contact{
+    grid-column: 2 / span 2;
+  }
+
+  .about-image{
+    grid-column: 2 / span 2;
+  }
+
+  .method-image{
+    grid-column: 2 / span 2;
+  }
 
   /* Requirement 15 code here -- Do not remove this comment. */
+  img{
+    height:auto;
+  }
+
+  .about-image{
+    overflow: hidden;
+  }
+
+  .clients-image{
+    overflow: hidden;
+  }
+
+  .contact-image{
+    overflow: hidden;
+  }
+
+  .method-image{
+    overflow: hidden;
+  }
+
 }
 
 /** Code for prefers reduced motion **/
