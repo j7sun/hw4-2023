@@ -117,25 +117,25 @@ img{
 
   /* Requirement 9 code here -- Do not remove this comment. */
 .about text{
-  justify-content: center;
+  align-self: end;
   max-height: 40vh;
   overflow: scroll;
 }
 
 .clients text{
-  justify-content: center;
+  align-self: end;
   max-height: 40vh;
   overflow: scroll;
 }
 
 .method text{
-  justify-content: center;
+  align-self: end;
   max-height: 40vh;
   overflow: scroll;
 }
 
 .contact text{
-  justify-content: center;
+  align-self: end;
   max-height: 40vh;
   overflow: scroll;
 }
