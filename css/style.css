@@ -192,10 +192,9 @@ img{
   /* Requirement 15 code here -- Do not remove this comment. */
   img{
     height:auto;
-    overflow:hidden;
   }
 
-  /* .about-image{
+  .about-image{
     overflow: hidden;
   }
 
@@ -209,7 +208,7 @@ img{
 
   .method-image{
     overflow: hidden;
-  } */
+  }
 
 }
 
